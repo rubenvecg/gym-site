@@ -1,0 +1,114 @@
+.schedule{
+	display: grid;
+	grid-template-columns: [mon] 1fr [tue] 1fr [wed] 1fr [thu] 1fr [fri] 1fr [sat] 1fr [sun] 1fr;
+	grid-template-rows: [day] auto [s8am] 1fr [s9am] 1fr [s10am] 1fr [s11am] 1fr [s12pm] 1fr [s1pm] 1fr [s2pm] 1fr [s3pm] 1fr [s4pm] 1fr [s5pm] 1fr;
+	grid-auto-flow: row;
+	grid-gap: 2px;
+	
+}
+
+.schedule div{
+	text-align: center;	
+	padding: 3px;
+}
+
+.day{
+	background-color: #8242BD;
+}
+
+.session-yoga{
+	background-color: #13bf13;
+}
+
+.session-circuit{
+	background-color: #114da8;
+}
+
+.session-pilates{
+	background-color: #a8323e;
+}
+
+#monday{
+	grid-row: day;
+	grid-column: mon;
+}
+
+#tuesday{	
+	grid-row: day;
+	grid-column: tue;
+}
+
+#wednesday{
+	grid-row: day;
+	grid-column: wed;
+}
+
+#thursday{
+	grid-row: day;
+	grid-column: thu;
+}
+
+#friday{
+	grid-row: day;
+	grid-column: fri;
+}
+
+#saturday{
+	grid-row: day;
+	grid-column: sat;
+}
+
+#sunday{
+	grid-row: day;
+	grid-column: sun;
+}
+
+#yoga-wed{
+	grid-row-start: s2pm;
+	grid-row-end: s4pm;
+	grid-column: wed;
+}
+
+#yoga-mon{
+	grid-row-start: s3pm;
+	grid-row-end: s5pm;
+	grid-column: mon;
+}
+
+#circuit-tue{
+	grid-row-start: s1pm;
+	grid-row-end: s2pm;
+	grid-column: tue;
+}
+
+#circuit-thu{
+	grid-row-start: s10am;
+	grid-row-end: s11am;
+	grid-column: thu;
+}
+
+#pilates-mon{
+	grid-row-start: s8am;
+	grid-row-end: s9am;
+	grid-column: mon;
+}
+
+#pilates-tue{
+	grid-row-start: s8am;
+	grid-row-end: s9am;
+	grid-column: tue;
+}
+
+#pilates-wed{
+	grid-row-start: s8am;
+	grid-row-end: s9am;
+	grid-column: wed;
+}
+
+#pilates-thu{
+	grid-row-start: s8am;
+	grid-row-end: s9am;
+	grid-column: thu;
+}
+
+

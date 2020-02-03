@@ -1,0 +1,311 @@
+body{	
+	width: 100%;
+	overflow-x: hidden;
+	font-family: "Avenir Next LT Pro", Helvetica, sans-serif;
+	background: #222;
+	color: #fff;
+	
+}
+
+.main-content{
+	position: relative;
+}
+
+.title-text{
+	font-family: Haettenschweiler, Helvetica, sans-serif;
+}
+
+a:hover{
+	text-decoration: footer;
+}
+
+
+
+
+.collapsed{
+	width: 0px !important; 
+}
+
+.hidden{
+	display: none !important;
+}
+
+.page-section, .footer{
+	position: relative;
+	background: rgba(2,2,2,0.7);
+	margin-bottom: 0px;
+}
+
+.footer{
+	overflow: auto;
+}
+
+
+
+
+#home-page-open-button, #gallery-page-open-button{
+	color: #fff;
+	position: fixed;
+	margin-top: 72px;	
+	font-size: 32px;
+	z-index: 2;
+	text-decoration: none;
+	-webkit-transition: background-color 0.5s;
+}
+
+#home-page-open-button:hover, #gallery-page-open-button:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+
+
+.blurred-header{
+	opacity: 0.8;
+}
+
+#home-page-header, #gallery-page-header{
+	position: fixed;
+	height: 63px;
+	margin-bottom: 0px;
+	z-index: 2;
+	background-color: #fff;
+	-webkit-transition: opacity 0.5s;
+}
+
+.logo{
+	height: 100%;
+	float: left;	
+}
+
+
+.nav-bar{
+	float: right;	
+	list-style-type: none;
+	padding: 0px;
+	
+}
+
+.nav-bar li{
+	display: inline;
+	margin: 0px;
+}
+
+.nav-bar li a{
+	text-decoration: none;	
+	padding: 18px;
+	color: #000;
+	font-size: 36px;
+}
+
+#join{
+	background-color: #8242BD;
+}
+
+
+
+.nav-bar li a:hover, a:active{
+	color: #fff;
+	background-color: #000;
+	-webkit-transition: background-color 0.5s;
+}
+
+#join:hover{
+	-webkit-transition: color 0.5s;
+}
+
+
+.video-container{
+	position: fixed;
+	margin-top: 0px ;
+	width: 100%;
+	z-index: -1;
+}
+
+
+.video{
+	display: block ;
+	width: 100%;
+	margin: auto ;
+}
+
+
+.video-heading-text{
+	text-align: center;
+}
+
+.video-heading{
+	margin-bottom: 18%;
+}
+
+.purple-filter{
+	position: absolute ;
+	top: 0px;
+	left:0px;
+	width: 100% ;
+	height: 100% ;
+	background-color: #512a75;
+	opacity: 0.5;	
+}
+
+/*BOOTSTRAP CLASSES */
+
+#about-content{
+	background: transparent;
+	color: #fff;
+	text-align: justify;	
+}
+
+
+.review-card{
+	background: #512A75;
+	color: #fff;	
+}
+
+.review-card footer{
+	color: #fff;
+}
+
+#gallery-link{	
+	background-image: url('../res/img/gallery.jpg');	
+	background-size: cover;	
+}
+
+#classes{	
+	background-image: url('../res/img/classes.jpg');	
+	background-size: cover;
+	margin-bottom: 0px;
+}
+
+.reviews-container{
+	background: transparent;
+	margin-bottom: 0px;
+}
+
+#gallery-link, #classes{
+	position: relative;
+	filter: grayscale(100%);
+}
+
+#gallery-link a, #classes a{
+	color: #fff;
+	font-size: 48px;
+	text-decoration: none;
+}
+
+
+
+#gallery-link:hover, #classes:hover{
+	filter: grayscale(0%);
+	-webkit-transition: 0.5s;	
+}
+
+
+
+.icon{
+	width: 16px;
+	height: 16px;
+}
+
+.left-side{
+	float: left;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.right-side{
+	float: right;
+	margin-right: 10px;
+}
+
+
+.email-contact{
+	color: #fff;	
+}
+
+.email-contact:hover{
+	color: #8242BD;	
+}
+
+.about-img{
+	height: 100%;
+}
+
+@media screen and (min-width: 769px){
+.video-heading-text{
+	font-size: 96px;
+}
+
+#home-page-header, #gallery-page-header{
+	width: 100%;
+}
+
+
+
+}
+
+@media screen and (max-width: 1010px){
+.video-heading-text{
+	font-size: 72px;
+}
+	
+body{
+	overflow-x: visible;
+}
+
+#home-page-header, #gallery-page-header{
+	width: 250px;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0s;
+	-webkit-transition: width 0.5s;
+}
+
+.nav-bar li{
+	display: block;
+	padding: 0px;
+	text-align: right;
+}
+
+.nav-bar li a{
+	text-decoration: none;	
+	font-size: 36px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.logo{
+	width: 250px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+
+.video, .video-container, .page-section{
+	width: 1010px;
+}
+
+.right-side{
+	float: left;
+	margin-left: 10px;
+}
+
+.review-card{
+	margin: 15px;	
+}
+
+.about-img{	
+	display: block;
+	margin: auto;
+}
+
+#classes{
+	margin-bottom: 30px;
+}
+
+
+}
+
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The coolest gym in New York City</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="#" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/form-style.css">
+
+</head>
+
+
+<body  id="gallery-page" onload="initializeElements(); checkSize();" onscroll="scrollTrigger();" onresize="resetMenu(); checkSize();">
+<a id="top"></a>
+
+
+<header>
+<div id="gallery-page-header" class="blurred-header">
+	
+	<a href="index.html#top">
+	<img class="logo" src="res/img/logo.png">
+	</a>
+	
+	<nav>
+	<ul class="nav-bar" id="main-menu">
+	<li id="gallery-page-close-button" class="button hidden"><a href="#!" onclick="toggleMenu();">&#10006;</a></li>
+	<li><a class="title-text" href="index.html#about">ABOUT US</a></li
+	><li><a class="title-text" href="classes.html">CLASSES</a></li
+	><li><a class="title-text" href="gallery.html">GALLERY</a></li
+	><li><a class="title-text" href="join.html" id="join">JOIN</a></li>
+	</ul>
+	</nav>	
+	
+
+</div>
+
+<a id="gallery-page-open-button" class="button title-text hidden" href="#!" onclick="toggleMenu();">&#9776;</a>
+</header>
+
+<div style="height:100px"></div>
+
+<div class="main-content">
+
+<div class="memberships">
+	<div class="container-fluid">
+		<div class="row">
+			
+			<div class="col-lg-3">
+				<div id="premium" class="container text-center">
+					<h1 class="title-text">PREMIUM MEMBERSHIP</h1>
+					
+					<div class="perks">
+					<p class="included">&#10004;</p> <p class="description">Unlimited Access to Home Club</p>
+					<p class="included">&#10004;</p> <p class="description">Free Fitness Training</p>
+					<p class="included">&#10004;</p> <p class="description">Free Wi-Fi</p>
+					<p class "included">&#10004;</p> <p class="description">Use of Any Location</p>
+					<p class="included">&#10004;</p> <p class="description">Bring a Guest</p>
+					<p class="included">&#10004;</p> <p class="description">Use of Pools</p>
+					<p class="included">&#10004;</p> <p class="description">Use of Sauna</p>
+					<p class="included">&#10004;</p> <p class="description">Use of Total Body Enhancement</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div id="classic" class="container text-center">
+					<h1 class="title-text">CLASSIC MEMBERSHIP</h1>
+					
+					<div class="perks">
+					<p class="included">&#10004;</p> <p class="description">Unlimited Access to Home Club</p>
+					<p class="included">&#10004;</p> <p class="description">Free Fitness Training</p>
+					<p class="included">&#10004;</p> <p class="description">Free Wi-Fi</p>
+					<p> </p> <p class="description not-included">Use of Any Location</p>
+					<p> </p> <p class="description not-included">Bring a Guest</p>
+					<p> </p> <p class="description not-included">Use of Pools</p>
+					<p> </p> <p class="description not-included">Use of Sauna</p>
+					<p> </p> <p class="description not-included">Use of Total Body Enhancement</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-6">
+			
+			<div class="form-container">
+			<h1 class="title-text text-center">JOIN TODAY</h1>
+			<br>
+			
+				
+				<form name="newMembershipForm" id="newMembershipForm" class="newMembershipForm">
+					<label for="customer_name">Name</label>
+					<input type="text" name="customer_name" id="customer_name">
+					<p class="error-message" id="name-err"></p>
+					
+					<label for="phone_number">Phone</label>
+					<input type="tel" name="phone_number" id="phone_number">
+					<p class="error-message" id="num-err"></p>
+					
+					<label for="email_address">Email</label>
+					<input type="email" name="email_address" id="email_address">
+					<p class="error-message" id="email-err"></p>
+					
+					<fieldset>
+					<legend class="title-text">Select a Branch</legend>
+					<label> <input type="radio" name="branch" id="branch_mh" checked> Manhattan </label>
+					<label> <input type="radio" name="branch" id="branch_bk"> Brooklyn </label>
+					<label> <input type="radio" name="branch" id="branch_qs"> Queens </label>
+					</fieldset>
+
+					<label for="membership">Select a membership:</label>
+					<select name="membership" id="membership">
+					<option value="" selected="selected">Select One</option>
+					<option value="classic" >Classic</option>
+					<option value="premium" >Premium</option>
+					</select>
+					<p class="error-message" id="memb-err"></p>
+					
+					<fieldset>
+					<legend  class="title-text">Do you have any medical condition?</legend>
+					<label> <input type="radio" name="med_condition" id="yes" onclick="printWarning();"> Yes </label>
+					<label> <input type="radio" name="med_condition" id="no" onclick="clearWarning();" checked> No </label>
+					</fieldset>
+
+					<div id="warning"></div>
+					
+					<button id="submit-button" class="title-text" type="button" value="send" onclick="validateForm();">Submit</button>
+
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+
+<br>
+<footer>
+
+
+<div class="left-side">
+<p> &#128204; 111 Los Santos Avenue, Los Santos, SA 12345</p>
+
+<p>All images taken for educational purposes only.</p>	
+</div>
+
+<div class="right-side">
+<p>	&#9742; (999) 999-999 </p>
+
+<a class="email-contact" href="mailto:info@burgershot.com">info@nycfit.com</a>
+</div>
+
+</footer>
+
+</body>
+
+
+<script src="js/layout.js"></script>
+<script src="js/validate.js"></script>
+</html>

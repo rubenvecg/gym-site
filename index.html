@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The coolest gym in New York City</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="#" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body id="home-page" onload="initializeElements(); checkSize();" onscroll="scrollTrigger();" onresize="resetMenu(); checkSize();">
+<a id="top"></a>
+
+
+<header>
+<div id="home-page-header" class="blurred-header">
+	
+	<a href="#top">
+	<img class="logo" src="res/img/logo.png">
+	</a>
+	
+	<nav>
+	<ul class="nav-bar" id="main-menu">
+	<li id="home-page-close-button" class="button hidden"><a href="#!" onclick="toggleMenu();">&#10006;</a></li>
+	<li><a class="title-text" href="#about">ABOUT US</a></li
+	><li><a class="title-text" href="classes.html">CLASSES</a></li
+	><li><a class="title-text" href="gallery.html">GALLERY</a></li
+	><li><a class="title-text" href="join.html" id="join">JOIN</a></li>
+	</ul>
+	</nav>	
+	
+
+</div>
+
+<a id="home-page-open-button" class="button title-text hidden" href="#!" onclick="toggleMenu();">&#9776;</a>
+</header>
+
+<div class="main-content">
+
+
+
+	<div class="video-container">
+
+		<div class="video-wrap">
+			<video class="video" autoplay loop muted>
+			<source src="res/video/video2.webm" type="video/webm">
+			<embed src="res/video/video2.webm" type="video/webm"></embed>
+			<object src="res/video/video2.webm" type="video/webm"></object>
+			</video>
+
+		</div>
+		
+		<div class="purple-filter"></div>
+				
+	</div>
+	
+	<div style="height: 380px;"></div>
+	<div class="video-heading">
+		<p class="video-heading-text title-text">Cool message here.</p>	
+	</div>
+
+<div  style="background: transparent; height:60px;" id="about"></div>
+
+<div class="page-section">
+
+	<div class="container-fluid">
+	
+	<div class="row">
+	
+		<div class="col-md-6">
+			
+				<h1 class="title-text">ABOUT US</h1>
+				<p>In tincidunt dapibus consequat. Integer diam nisl, interdum sed enim vitae, fermentum venenatis ante. Aenean ornare id nulla id pellentesque. Etiam id velit ac enim 
+				   eleifend maximus. Nunc et arcu in ex pretium dictum eu eget odio. Donec ac dolor lacinia, tempor tortor at, volutpat mauris. Ut at dui iaculis, mollis velit eget, 
+				   viverra risus. Nam at vehicula nisi, ut rhoncus ex. Quisque quis fringilla libero, nec dignissim ipsum. Vivamus malesuada faucibus vehicula. Donec tellus dolor, 
+				   lobortis a venenatis ut, maximus vel turpis. Sed sodales, justo nec interdum mollis, quam dui laoreet sem, nec scelerisque tellus tellus ac massa.</p>
+						
+				<div id="gallery-link" class="jumbotron text-center">
+					<a class="title-text" href="gallery.html">OUR FACILITIES</a>
+				</div>
+			
+				<div id="classes" class="jumbotron text-center">
+					<a class="title-text" href="classes.html">OUR CLASSES</a>
+				</div>		
+			
+		</div>
+		
+		<div class="col-md-6">
+			<img class="about-img" src="res/img/about.jpg"/>
+		</div>
+	
+	
+		
+	
+	</div>
+	
+	</div>
+
+
+	<div class="jumbotron reviews-container">
+	
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card review-card">
+				<div class="card-body">
+				<blockquote>NYC Fitness Center is absolutely incredible! Hands down my fav place in nyc to take classes (group and or private's) the trainers are actually out of this world!
+							I work with Lauren and Kim, and did group class with Will and George. Everyone is seriously on fire. My body has completely transformed since starting to 
+							move with this crowd! Will Space is my second home. I always feel so elated when I leave.</blockquote>
+				<footer class="blockquote-footer">Lebron James</footer>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="card review-card">
+				<div class="card-body">
+				<blockquote>NYC Fitness Center is absolutely incredible! Hands down my fav place in nyc to take classes (group and or private's) the trainers are actually out of this world!
+							I work with Lauren and Kim, and did group class with Will and George. Everyone is seriously on fire. My body has completely transformed since starting to 
+							move with this crowd! Will Space is my second home. I always feel so elated when I leave.</blockquote>
+				<footer class="blockquote-footer">Lebron James</footer>
+				</div>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+				<div class="card review-card">
+				<div class="card-body">
+				<blockquote>NYC Fitness Center is absolutely incredible! Hands down my fav place in nyc to take classes (group and or private's) the trainers are actually out of this world!
+							I work with Lauren and Kim, and did group class with Will and George. Everyone is seriously on fire. My body has completely transformed since starting to 
+							move with this crowd! Will Space is my second home. I always feel so elated when I leave.</blockquote>
+				<footer class="blockquote-footer">Lebron James</footer>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</div>
+
+<div class="footer">
+<footer>
+<hr>
+
+<div class="left-side">
+<p> &#128204; 111 Los Santos Avenue, Los Santos, SA 12345</p>
+
+<p>All images taken for educational purposes only.</p>	
+</div>
+
+<div class="right-side">
+<p>	&#9742; (999) 999-999 </p>
+
+<a class="email-contact" href="mailto:info@burgershot.com">info@nycfit.com</a>
+</div>
+
+</footer>
+</div>
+
+
+
+
+
+</div>
+</body>
+
+
+<script src="js/layout.js"></script>
+
+</html>

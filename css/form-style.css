@@ -1,0 +1,91 @@
+.newMembershipForm{
+	display: grid;
+	grid-template-columns: [labels] 250px [controls] auto;
+	grid-auto-flow: row;
+	padding: 5px;
+}
+
+.newMembershipForm > input,
+.newMembershipForm > select,
+.newMembershipForm > textarea{
+	background-color: transparent;
+	color: #222;
+	border: 2px #222 solid;
+}
+
+.newMembershipForm > label,
+.newMembershipForm > fieldset{
+	grid-column: labels;
+	grid-row: auto;
+}
+
+.newMembershipForm > input,
+.newMembershipForm > select,
+.newMembershipForm > textarea,
+.newMembershipForm > .error-message{
+	grid-column: controls;
+	grid-row: auto;
+}
+
+.newMembershipForm > .error-message{
+	color: #a8323e;
+}
+
+.newMembershipForm > fieldset{
+	grid-column: span 2;	
+}
+
+.newMembershipForm > button{
+	width: 150px;
+	margin: auto;
+	padding: 0px;
+	font-size: 24px;
+	background-color: transparent;
+	color: #222;
+	border: 2px #222 solid;
+	grid-column: span 2;
+}
+
+
+
+
+#classic, .form-container{
+	background: #ccc;
+	color: #222;
+}
+
+#premium{
+	background: #8242BD;	
+}
+
+.perks{
+	width: 300px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: [inc] auto [desc]1fr;
+	grid-template-rows: repeat(8, 1fr);
+}
+
+.included{
+	grid-column: inc;
+	margin-right: 5px;
+}
+
+.not-included{
+	color: #777;
+}
+
+.description{
+	grid-column: desc;
+	text-align: left;
+}
+
+#warning{
+	background-color: #222;
+	color: #ccc;
+	grid-column: span 2;
+	margin-bottom: 10px;
+}
+
+
+

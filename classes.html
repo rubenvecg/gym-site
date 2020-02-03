@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The coolest gym in New York City</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="#" type="image/x-icon">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/classes-style.css">
+
+</head>
+
+
+<body  id="gallery-page" onload="initializeElements(); checkSize();" onscroll="scrollTrigger();" onresize="resetMenu(); checkSize();">
+<a id="top"></a>
+
+
+<header>
+<div id="gallery-page-header" class="blurred-header">
+	
+	<a href="index.html#top">
+	<img class="logo" src="res/img/logo.png">
+	</a>
+	
+	<nav>
+	<ul class="nav-bar" id="main-menu">
+	<li id="gallery-page-close-button" class="button hidden"><a href="#!" onclick="toggleMenu();">&#10006;</a></li>
+	<li><a class="title-text" href="index.html#about">ABOUT US</a></li
+	><li><a class="title-text" href="classes.html">CLASSES</a></li
+	><li><a class="title-text" href="gallery.html">GALLERY</a></li
+	><li><a class="title-text" href="join.html" id="join">JOIN</a></li>
+	</ul>
+	</nav>	
+	
+
+</div>
+
+<a id="gallery-page-open-button" class="button title-text hidden" href="#!" onclick="toggleMenu();">&#9776;</a>
+</header>
+
+<div style="height:100px"></div>
+
+<div class="main-content">
+
+
+<h1 class="title-text left-side">OUR CLASSES</h1>
+<br clear="left"><br>
+
+
+<div class="schedule">
+	<div class="day" id="monday"><h3 class="title-text">MONDAY</h3></div>
+	<div class="day" id="tuesday"><h3 class="title-text">TUESDAY</h3></div>
+	<div class="day" id="wednesday"><h3 class="title-text">WEDNESDAY</h3></div>
+	<div class="day" id="thursday"><h3 class="title-text">THURSDAY</h3></div>
+	<div class="day" id="friday"><h3 class="title-text">FRIDAY</h3></div>
+	<div class="day" id="saturday"><h3 class="title-text">SATURDAY</h3></div>
+	<div class="day" id="sunday"><h3 class="title-text">SUNDAY</h3></div>
+	
+	<div id="yoga-wed" class=" session session-yoga">
+		<h3 class="title-text"> Yoga </h3>
+		<p>	&#8986; 2:00PM - 4:00PM</p>
+		<p>	By: Kevin</p>
+	</div>
+	
+	<div id="yoga-mon" class="session session-yoga">
+		<h3 class="title-text"> Yoga </h3>
+		<p>	&#8986; 3:00PM - 5:00PM</p>
+		<p>	By: Sarah</p>
+	</div>
+	
+	<div id="circuit-tue" class="session session-circuit">
+		<h3 class="title-text"> Circuit Training </h3>
+		<p>	&#8986; 1:00PM - 2:00PM</p>
+		<p>	By: Jason</p>
+	</div>
+	
+	<div id="circuit-thu" class="session session-circuit">
+		<h3 class="title-text"> Circuit Training </h3>
+		<p>	&#8986; 10:00AM - 11:00AM</p>
+		<p>	By: Jason</p>
+	</div>
+	
+	<div id="pilates-mon" class="session session-pilates">
+		<h3 class="title-text"> Morning Pilates </h3>
+		<p>	&#8986; 8:00AM - 9:00AM</p>
+		<p>	By: Becky</p>
+	</div>
+	
+	<div id="pilates-tue" class="session session-pilates">
+		<h3 class="title-text"> Morning Pilates </h3>
+		<p>	&#8986; 8:00AM - 9:00AM</p>
+		<p>	By: Becky</p>
+	</div>
+	
+	<div id="pilates-wed" class="session session-pilates">
+		<h3 class="title-text"> Morning Pilates </h3>
+		<p>	&#8986; 8:00AM - 9:00AM</p>
+		<p>	By: Jennifer</p>
+	</div>
+	
+	<div id="pilates-thu" class="session session-pilates">
+		<h3 class="title-text"> Morning Pilates </h3>
+		<p>	&#8986; 8:00AM - 9:00AM</p>
+		<p>	By: Jennifer</p>
+	</div>
+	
+	
+</div>
+
+
+
+<footer>
+<hr>
+
+<div class="left-side">
+<p> &#128204; 111 Los Santos Avenue, Los Santos, SA 12345</p>
+
+<p>All images taken for educational purposes only.</p>	
+</div>
+
+<div class="right-side">
+<p>	&#9742; (999) 999-999 </p>
+
+<a class="email-contact" href="mailto:info@burgershot.com">info@nycfit.com</a>
+</div>
+
+</footer>
+</div>
+</body>
+
+
+<script src="js/layout.js"></script>
+</html>

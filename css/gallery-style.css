@@ -1,0 +1,15 @@
+.gallery{
+	padding: 0px;
+	text-align: center;
+}
+
+.gallery img{
+	filter: grayscale(100%);
+	-webkit-transition: 0.5s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0%);
+}
+
+
